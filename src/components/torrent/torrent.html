@@ -1,0 +1,91 @@
+<ol class="breadcrumb">
+  <span class="breadcrumb-item"><a ui-sref="app.home">Home</a> </span>
+  <span class="breadcrumb-item "> Torrent </span>
+</ol>
+
+<div class="container-fluid">
+  <div class="animated fadeIn">
+
+    <div class="card">
+
+      <div class="card-header">
+        <strong>Add torrent files</strong>
+        <small>upload</small>
+      </div>
+      <div class="card-block">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="name">uploads</label>
+              <div class="dropzone" options="$ctrl.dzOptions" callbacks="$ctrl.dzCallbacks" methods="$ctrl.dzMethods" ng-dropzone></div>
+            </div>
+          </div>
+        </div>
+        <!--/row-->
+      </div>
+    </div>
+    <!-- end card -->
+
+    <div class="card">
+
+      <div class="card-header">
+        <strong>torrent files</strong>
+        <small></small>
+      </div>
+      <div class="card-block">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>name</th>
+              <th>status</th>
+              <th>progress</th>
+              <th>#</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Samppa Nori</td>
+              <td>
+                <span class="tag tag-success">Active</span>
+              </td>
+              <td>2012/01/01</td>
+              <td>Member</td>
+            </tr>
+            <tr>
+              <td>Estavan Lykos</td>
+              <td>
+                <span class="tag tag-danger">Banned</span>
+              </td>
+              <td>2012/02/01</td>
+              <td>Staff</td>
+            </tr>
+            <tr>
+              <td>Chetan Mohamed</td>
+              <td>
+                <span class="tag tag-default">Inactive</span>
+              </td>
+              <td>2012/02/01</td>
+              <td>Admin</td>
+            </tr>
+            <tr>
+              <td>Derick Maximinus</td>
+              <td>
+                <span class="tag tag-warning">Pending</span>
+              </td>
+              <td>2012/03/01</td>
+              <td>Member</td>
+            </tr>
+            <tr>
+              <td>Friderik Dávid</td>
+              <td>
+                <span class="tag tag-success">Active</span>
+              </td>
+              <td>2012/01/21</td>
+              <td>Staff</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

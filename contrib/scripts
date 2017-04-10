@@ -1,0 +1,4 @@
+alter table ranks_naver rename to rank_naver_keywords;
+alter table ranks_naver_history rename to rank_naver_entries;
+alter table rank_naver_entries rename column rank_naver_id to rank_naver_keyword_id;
+
